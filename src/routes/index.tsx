@@ -142,7 +142,7 @@ function Index() {
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
               Part product manager, part business analyst, part UX observer, part adventurer. I connect the dots, 
-              challenge assumptions, make products work — that <it> feels good </it>.
+              challenge assumptions, make products work — that <i>feels good</i>.
             </p>
           </div>
           <div className="md:col-span-4">
@@ -155,9 +155,6 @@ function Index() {
                 className="aspect-[4/5] w-full object-cover grayscale"
               />
             </div>
-            <p className="mt-3 text-xs text-muted-foreground">
-              Currently: open to selected projects.
-            </p>
           </div>
         </div>
       </section>
@@ -165,13 +162,13 @@ function Index() {
       {/* Disciplines strip */}
       <div className="border-y border-rule py-6">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-3 px-5 font-display text-2xl font-light md:px-10 md:text-4xl">
-          <span>Product</span>
+          <span>Product Strategies</span>
           <span className="text-accent-bold">✦</span>
-          <span className="italic">Decks</span>
+          <span className="italic">Business Decks</span>
           <span className="text-accent-bold">✦</span>
           <span>UX Audits</span>
           <span className="text-accent-bold">✦</span>
-          <span className="italic">AI side projects</span>
+          <span className="italic">AI project</span>
         </div>
       </div>
 
@@ -236,7 +233,7 @@ function Index() {
               Track record
             </p>
             <h2 className="font-display text-4xl font-light md:text-6xl">
-              Work <em className="italic text-accent-bold">experience</em>
+              Work <em className="italic text-accent-bold">experiences</em>
             </h2>
           </div>
 
@@ -305,15 +302,15 @@ function Index() {
           Contact
         </p>
         <h2 className="font-display text-4xl font-light leading-tight md:text-7xl">
-          Got a product, a deck,
+          Got a product, a business,
           <br />
           or a flow that <em className="italic text-accent-bold">isn't quite right</em>?
         </h2>
         <a
-          href="mailto:hello@example.com"
+          href="mailto:katrinaapuspita@gmail.com"
           className="mt-10 inline-flex items-center gap-3 border-b-2 border-ink pb-1 font-display text-2xl transition-colors hover:text-accent-bold hover:border-accent-bold md:text-4xl"
         >
-          hello@example.com
+          Click here to get in touch!
           <span aria-hidden>→</span>
         </a>
       </section>
