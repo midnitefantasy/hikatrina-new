@@ -132,19 +132,17 @@ function Index() {
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div className="md:col-span-8 fade-up">
             <p className="mb-6 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-              Portfolio · 2026
+              HIKATRINA · 2026
             </p>
             <h1 className="font-display text-5xl font-light leading-[1.02] md:text-8xl">
-              I build{" "}
-              <em className="squiggle italic text-accent-bold">products</em>,
+              I turn{" "}
+              <em className="squiggle italic text-accent-bold">problems</em>,
               <br />
-              fix <em className="squiggle italic">decks</em>,
-              <br />
-              and audit <em className="squiggle italic">interfaces</em>.
+              into clear <em className="squiggle italic text-accent-bold">product solutions</em>,
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-              Part product manager, part editor, part designer. I help teams turn vague
-              ambition into something you can actually ship — and present.
+              Part product manager, part business analyst, part UX observer, part adventurer. I connect the dots, 
+              challenge assumptions, make products work — that <it> feels good </it>.
             </p>
           </div>
           <div className="md:col-span-4">
