@@ -5,17 +5,17 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Portfolio — Product, Decks & UX" },
+      { title: "Katrina's Portfolio" },
       {
         name: "description",
         content:
-          "Portfolio of a product manager: product strategy, presentation deck reviews & templates, UX audits, plus photography and gym life.",
+          "Katrina's portfolio as a product manager specialized in product strategy, business deck reviews & templates, and UX audits",
       },
-      { property: "og:title", content: "Portfolio — Product, Decks & UX" },
+      { property: "og:title", content: "Katrina's Portfolio" },
       {
         property: "og:description",
         content:
-          "Product management, deck reviews, UX audits — and a few hobbies on the side.",
+          "Product management, business deck reviews, UX audits, and work experiences of Katrina",
       },
     ],
   }),
@@ -28,15 +28,15 @@ const services = [
     desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets that make great products ship.",
     to: "/case-studies" as const,
     linkLabel: "Sample Case",
-    tags: ["Strategy", "Roadmaps", "Discovery"],
+    tags: ["Strategy", "Product Discovery", "Roadmap"],
   },
   {
     no: "02",
-    title: "Deck Review & Templates",
+    title: "Business Analysis & Deck",
     desc: "Investor decks, sales decks, internal narratives. I rebuild the story, the structure, and the slide system.",
     to: "/deck-samples" as const,
     linkLabel: "Sample Work",
-    tags: ["Pitch", "Narrative", "Templates"],
+    tags: ["Pitch", "Narrative", "Data Analysis"],
   },
   {
     no: "03",
