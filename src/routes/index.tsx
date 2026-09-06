@@ -25,7 +25,7 @@ const services = [
   {
     no: "01",
     title: "Product Management",
-    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets that make great products ship.",
+    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets that turn priorities into products worth shipping.",
     to: "/case-studies" as const,
     linkLabel: "Sample Case",
     tags: ["Strategy", "Product Discovery", "Roadmap"],
@@ -33,48 +33,53 @@ const services = [
   {
     no: "02",
     title: "Business Analysis & Deck",
-    desc: "Investor decks, sales decks, internal narratives. I rebuild the story, the structure, and the slide system.",
+    desc: "I make sense of the numbers, find the story, and map out what’s next. ",
     to: "/deck-samples" as const,
     linkLabel: "Sample Work",
-    tags: ["Pitch", "Narrative", "Data Analysis"],
+    tags: ["Pitch", "Story-telling", "Data Analysis"],
   },
   {
     no: "03",
     title: "UX Audit",
-    desc: "A heuristic teardown of your product with prioritised fixes — what to ship this sprint vs. this quarter.",
+    desc: "Untangling confusing journeys, dead ends, and navigation headaches to give better user experience.",
     to: "/ux-audit" as const,
     linkLabel: "Sample Analysis",
-    tags: ["Heuristics", "Flows", "Prioritisation"],
+    tags: ["Heuristics", "Flows", "User Experience"],
   },
 ];
 
 // ✏️ Add a new entry here for each role — the section below renders automatically.
 const experience = [
   {
-    period: "2023 — Now",
-    role: "Senior Product Manager",
-    company: "B2B SaaS platform",
+    period: "2025 - Now",
+    location: "Australia",
+    role: "UX Analyst",
+    company: "UX Researcher firm",
     points: [
       "Own activation and retention for the core workspace product.",
       "Rebuilt the onboarding funnel with design and growth engineering.",
     ],
   },
   {
-    period: "2020 — 2023",
-    role: "Product Manager",
-    company: "Marketplace startup",
+    period: "2023 — 2025",
+    location: "Indonesia",
+    role: "Junior Business Analyst",
+    company: "Digital Bank",
     points: [
-      "Led seller tooling from first spec to 12k monthly active sellers.",
-      "Set up the discovery cadence the team still runs today.",
+      "Enhanced and built payment product for internal team",
+      "Reduced transaction friction through smarter payment flow",
+      "Managing relationship with stakeholders while increasing transaction number through multiple business ideation backed by data",
     ],
   },
   {
-    period: "2018 — 2020",
-    role: "Business Analyst",
-    company: "Consulting",
+    period: "2021 — 2023",
+    location: "Indonesia",
+    role: "Junior Growth Product Owner",
+    company: "Digital App for Logistic",
     points: [
-      "Client research, process mapping, and a lot of decks.",
-      "Where the deck-review habit started.",
+      "Built the loyalty program for retail customers",
+      "Analyzed and led the improvement ideation for engagement funnel",
+      "Created the promotional scheme and delivery for retail customers based on data insights",
     ],
   },
 ];
@@ -83,21 +88,21 @@ const experience = [
 const personalProjects = [
   {
     emoji: "🤖",
-    title: "Deck Doctor",
-    note: "An AI assistant that reads a pitch deck and rewrites the narrative flow.",
-    tag: "LLM · Prototype",
+    title: "Spending Tracker",
+    note: "An AI assistant that reads your bank statement - and track your outcomes",
+    tag: "WIP",
   },
   {
-    emoji: "🧭",
-    title: "Audit Copilot",
-    note: "Turns screen recordings into a scored list of usability findings.",
-    tag: "Vision · WIP",
+    emoji: "💸",
+    title: "Fair Share",
+    note: "Because friendship shouldn't end over a dinner bill.",
+    tag: "Completed",
   },
   {
     emoji: "📚",
     title: "Second Brain Bot",
     note: "A retrieval assistant over my product notes, specs and retros.",
-    tag: "RAG · Personal",
+    tag: "WIP - Vision",
   },
 ];
 
@@ -109,20 +114,19 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-rule bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-10">
           <a href="#top" className="font-display text-lg font-semibold tracking-tight">
-            Folio<span className="text-accent-bold">.</span>
+            🐈hiKatrina<span className="text-accent-bold"></span>
           </a>
           <nav className="hidden gap-8 text-sm md:flex">
             <a href="#work" className="hover:text-accent-bold transition-colors">Work</a>
             <a href="#experience" className="hover:text-accent-bold transition-colors">Experience</a>
             <a href="#personal" className="hover:text-accent-bold transition-colors">AI projects</a>
-            <a href="#contact" className="hover:text-accent-bold transition-colors">Contact</a>
           </nav>
 
           <a
             href="#contact"
             className="rounded-full border border-ink px-4 py-1.5 text-xs font-medium transition-colors hover:bg-accent-lemon hover:text-ink"
           >
-            Say hi
+            Contact me
           </a>
         </div>
       </header>
@@ -136,13 +140,13 @@ function Index() {
             </p>
             <h1 className="font-display text-5xl font-light leading-[1.02] md:text-8xl">
               I turn{" "}
-              <em className="squiggle italic text-accent-bold">problems</em>,
+              <em className="squiggle italic text-accent-bold">problems</em>
               <br />
-              into clear <em className="squiggle italic text-accent-bold">product solutions</em>,
+              into clear <em className="squiggle italic text-accent-bold">product solutions</em>
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
               Part product manager, part business analyst, part UX observer, part adventurer. I connect the dots, 
-              challenge assumptions, make products work — that <i>feels good</i>.
+              challenge assumptions, build products that work — and <i>feel good</i>.
             </p>
           </div>
           <div className="md:col-span-4">
@@ -180,7 +184,7 @@ function Index() {
             <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
               What I do
             </p>
-            <h2 className="font-display text-4xl font-light md:text-6xl">Services</h2>
+            <h2 className="font-display text-4xl font-light md:text-6xl">Expertise</h2>
           </div>
           <span className="hidden text-sm text-muted-foreground md:block">
             ({String(services.length).padStart(2, "0")})
@@ -244,6 +248,7 @@ function Index() {
                 <div className="md:col-span-4">
                   <h3 className="font-display text-2xl md:text-3xl">{e.role}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{e.company}</p>
+                  <p className="text-sm text-muted-foreground md:col-span-3">{e.location}</p>
                 </div>
                 <ul className="space-y-2 md:col-span-5">
                   {e.points.map((pt) => (
@@ -310,8 +315,8 @@ function Index() {
           href="mailto:katrinaapuspita@gmail.com"
           className="mt-10 inline-flex items-center gap-3 border-b-2 border-ink pb-1 font-display text-2xl transition-colors hover:text-accent-bold hover:border-accent-bold md:text-4xl"
         >
-          Click here to get in touch!
-          <span aria-hidden>→</span>
+          Get in touch!
+          <span aria-hidden>📩</span>
         </a>
       </section>
 
@@ -321,8 +326,7 @@ function Index() {
           <span>© {new Date().getFullYear()} — Built with care.</span>
           <div className="flex gap-6">
             <a href="#" className="hover:text-ink">LinkedIn</a>
-            <a href="#" className="hover:text-ink">Instagram</a>
-            <a href="#" className="hover:text-ink">Read.cv</a>
+            {/*<a href="#" className="hover:text-ink">Instagram</a>*/}
           </div>
         </div>
       </footer>
