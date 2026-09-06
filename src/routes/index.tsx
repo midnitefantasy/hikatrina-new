@@ -25,7 +25,7 @@ const services = [
   {
     no: "01",
     title: "Product Management",
-    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets about prioritization about timeline that make great products ship.",
+    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets that turn priorities into products worth shipping.",
     to: "/case-studies" as const,
     linkLabel: "Sample Case",
     tags: ["Strategy", "Product Discovery", "Roadmap"],
@@ -41,7 +41,7 @@ const services = [
   {
     no: "03",
     title: "UX Audit",
-    desc: "Untangling confusing journeys, dead ends, and navigation headaches to give better experience.",
+    desc: "Untangling confusing journeys, dead ends, and navigation headaches to give better user experience.",
     to: "/ux-audit" as const,
     linkLabel: "Sample Analysis",
     tags: ["Heuristics", "Flows", "User Experience"],
