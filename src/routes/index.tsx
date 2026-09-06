@@ -25,7 +25,7 @@ const services = [
   {
     no: "01",
     title: "Product Management",
-    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets that make great products ship.",
+    desc: "From discovery to launch — roadmaps, specs, and the boring spreadsheets about prioritization about timeline that make great products ship.",
     to: "/case-studies" as const,
     linkLabel: "Sample Case",
     tags: ["Strategy", "Product Discovery", "Roadmap"],
@@ -33,18 +33,18 @@ const services = [
   {
     no: "02",
     title: "Business Analysis & Deck",
-    desc: "Investor decks, sales decks, internal narratives. I rebuild the story, the structure, and the slide system.",
+    desc: "I make sense of the numbers, find the story, and map out what’s next. ",
     to: "/deck-samples" as const,
     linkLabel: "Sample Work",
-    tags: ["Pitch", "Narrative", "Data Analysis"],
+    tags: ["Pitch", "Story-telling", "Data Analysis"],
   },
   {
     no: "03",
     title: "UX Audit",
-    desc: "A heuristic teardown of your product with prioritised fixes — what to ship this sprint vs. this quarter.",
+    desc: "Untangling confusing journeys, dead ends, and navigation headaches to give better experience.",
     to: "/ux-audit" as const,
     linkLabel: "Sample Analysis",
-    tags: ["Heuristics", "Flows", "Prioritisation"],
+    tags: ["Heuristics", "Flows", "User Experience"],
   },
 ];
 
@@ -88,21 +88,21 @@ const experience = [
 const personalProjects = [
   {
     emoji: "🤖",
-    title: "Deck Doctor",
-    note: "An AI assistant that reads a pitch deck and rewrites the narrative flow.",
-    tag: "LLM · Prototype",
+    title: "Spending Tracker",
+    note: "An AI assistant that reads your bank statement - and track your outcomes",
+    tag: "WIP",
   },
   {
-    emoji: "🧭",
-    title: "Audit Copilot",
-    note: "Turns screen recordings into a scored list of usability findings.",
-    tag: "Vision · WIP",
+    emoji: "💸",
+    title: "Fair Share",
+    note: "Because friendship shouldn't end over a dinner bill.",
+    tag: "Completed",
   },
   {
     emoji: "📚",
     title: "Second Brain Bot",
     note: "A retrieval assistant over my product notes, specs and retros.",
-    tag: "RAG · Personal",
+    tag: "WIP - Vision",
   },
 ];
 
@@ -114,20 +114,19 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-rule bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-10">
           <a href="#top" className="font-display text-lg font-semibold tracking-tight">
-            Folio<span className="text-accent-bold">.</span>
+            🐈hiKatrina<span className="text-accent-bold"></span>
           </a>
           <nav className="hidden gap-8 text-sm md:flex">
             <a href="#work" className="hover:text-accent-bold transition-colors">Work</a>
             <a href="#experience" className="hover:text-accent-bold transition-colors">Experience</a>
             <a href="#personal" className="hover:text-accent-bold transition-colors">AI projects</a>
-            <a href="#contact" className="hover:text-accent-bold transition-colors">Contact</a>
           </nav>
 
           <a
             href="#contact"
             className="rounded-full border border-ink px-4 py-1.5 text-xs font-medium transition-colors hover:bg-accent-lemon hover:text-ink"
           >
-            Say hi
+            Contact me
           </a>
         </div>
       </header>
@@ -246,10 +245,10 @@ function Index() {
             {experience.map((e) => (
               <article key={e.role + e.period} className="grid gap-3 py-8 md:grid-cols-12 md:gap-8 md:py-10">
                 <p className="text-sm text-muted-foreground md:col-span-3">{e.period}</p>
-                <p className="text-sm text-muted-foreground md:col-span-3">{e.location}</p>
                 <div className="md:col-span-4">
                   <h3 className="font-display text-2xl md:text-3xl">{e.role}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{e.company}</p>
+                  <p className="text-sm text-muted-foreground md:col-span-3">{e.location}</p>
                 </div>
                 <ul className="space-y-2 md:col-span-5">
                   {e.points.map((pt) => (
