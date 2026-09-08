@@ -25,25 +25,44 @@ export const Route = createFileRoute("/case-studies")({
 const projects = [
   {
     no: "01",
-    title: "Onboarding Revamp",
-    context: "Activation was stuck at 38% for a B2B SaaS tool.",
+    title: "Inbox Revamp",
+    context: "In-app promotions were fragmented across multiple touchpoints, making marketing content easy to miss and difficult for users to revisit.",
     thinking: [
-      "Mapped the first-run funnel and found the drop-off was a permissions wall, not a value problem.",
-      "Reordered the aha-moment before setup, cut 6 steps to 3.",
+      "Identified fragmented promotional touchpoints and mapped how users currently discovered marketing content.",
+      "Consolidated promotions and marketing assets into a single destination — the Inbox.",
+      "Mapped the end-to-end journey from discovering a promotion → viewing its details → taking the intended action.",
+      "Defined the Inbox structure and prioritization logic to balance marketing needs with user relevance.",
     ],
-    outcome: "Activation ↑ to 54% in 6 weeks.",
-    tags: ["Activation", "Funnel", "B2B SaaS"],
+    outcome: "Created a centralized marketing surface that made promotions easier to discover and revisit, while giving the marketing team a more structured channel for in-app campaigns",
+    tags: ["Engagement", "Marketing Product", "Mobile-App"],
   },
   {
     no: "02",
-    title: "Deck System for Seed Raise",
-    context: "Founder had 40 slides and no story.",
+    title: "Building Loyalty Program",
+    context: "High-value users had little incentive to stay loyal beyond the core product experience.",
     thinking: [
-      "Reframed the narrative from features to a market-shift argument.",
-      "Built a 12-slide template the team now reuses for every update.",
+      "Identified the highest-value user segment by analyzing LTV and weekly transaction behavior",
+      "Analyzed customer needs and motivations to understand what they find genuinely valuable",
+      "Benchmarked competitor loyalty programs and identified mechanics that could be adapted to our product",
+      "Designed user segmentation and differentiated incentives based on transaction behavior and value",
+      "Mapped the end-to-end loyalty journey, from eligibility and earning rewards to redemption and continued engagement"
     ],
-    outcome: "Closed a $1.8M seed round.",
-    tags: ["Narrative", "Fundraising", "Templates"],
+    outcome: "Launched a loyalty program designed around high-value user behavior, creating a new mechanism to increase repeat transactions and strengthen customer retention.",
+    tags: ["Customer Experience", "Engagement", "Analysis"],
+  },
+   {
+    no: "03",
+    title: "Reducing Transaction Friction during High Traffic Volume",
+      context: "Transaction success rates deteriorated during peak traffic, creating significant friction in the payment journey.",
+  thinking: [
+    "Identify where the friction was during high-traffic period.",
+    "Worked with engineering and risk stakeholders to distinguish genuine security requirements from unnecessary friction.",
+    "Segmented transactions based on risk and eligibility to identify where a lower-friction experience could be safely introduced.",
+    "Designed a streamlined transaction flow for qualifying transactions while maintaining the required controls.",
+    "Aligned product, engineering, and risk stakeholders on rollout criteria and guardrails."
+  ],
+  outcome: "Launched a streamlined transaction flow for eligible users, reducing unnecessary friction while maintaining appropriate security controls.",
+  tags: ["Customer Experience", "Payments", "Risk & Compliance"]
   },
 ];
 
@@ -90,9 +109,10 @@ function CaseStudies() {
                 </ul>
               </div>
 
-              <p className="mt-6 font-display text-lg">
+              <div className="mt-6 text-lg">
+                <p className="mb-3 text-s uppercase tracking-[0.5em] text-accent-bold">OUTCOME</p>
                 <span className="squiggle">{p.outcome}</span>
-              </p>
+              </div>
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {p.tags.map((t, i) => (
@@ -117,7 +137,7 @@ export function SubPageHeader() {
     <header className="sticky top-0 z-50 border-b border-rule bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-10">
         <Link to="/" className="font-display text-lg font-semibold tracking-tight">
-          Folio<span className="text-accent-bold">.</span>
+          🐈hiKatrina<span className="text-accent-bold">.</span>
         </Link>
         <Link
           to="/"
