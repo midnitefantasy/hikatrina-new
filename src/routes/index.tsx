@@ -323,7 +323,7 @@ function Index() {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-5 py-8 text-xs text-muted-foreground md:flex-row md:items-center md:px-10">
           <span>© {new Date().getFullYear()} — Built with care.</span>
           <div className="flex gap-6">
-            <a href="https://www.linkedin.com/in/katrinapuspita/" className="hover:text-ink">LinkedIn</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katrinapuspita/" className="hover:text-ink">LinkedIn</a>
             {/*<a href="#" className="hover:text-ink">Instagram</a>*/}
           </div>
         </div>
