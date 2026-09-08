@@ -139,10 +139,8 @@ function Index() {
               HIKATRINA · 2026
             </p>
             <h1 className="font-display text-5xl font-light leading-[1.02] md:text-8xl">
-              I turn{" "}
-              <em className="squiggle italic text-accent-bold">problems</em>
-              <br />
-              into clear <em className="squiggle italic text-accent-bold">product solutions</em>
+              <em className="squiggle italic text-accent-bold">Katrina</em>
+              Puspita
             </h1>
             <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
               Part product manager, part business analyst, part UX observer, part adventurer. I connect the dots, 
