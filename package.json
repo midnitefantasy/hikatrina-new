@@ -85,4 +85,7 @@
     "typescript-eslint": "^8.56.1",
     "vite": "^7.3.1"
   }
+  "overrides": {
+     "@tanstack/start-server-core": "1.169.39"
+   }
 }
