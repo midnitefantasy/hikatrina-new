@@ -15,12 +15,12 @@
  *
  * To add a new semantic color:
  * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * 2. Register it in @theme inline as --color-<n>: var(--<n>)
  */
 
 @theme inline {
-  --font-display: "Fraunces", serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Google Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Google Sans", system-ui, -apple-system, sans-serif;
   --color-ink: var(--ink);
   --color-accent-bold: var(--accent-bold);
   --color-accent-soft: var(--accent-soft);
@@ -81,8 +81,8 @@
   --accent-lavender: oklch(0.6787 0.1682 315.58);
   --accent-aqua: oklch(0.7946 0.0569 201.56);
   --rule: oklch(0.2667 0.0390 35.36 / 0.12);
-  --font-display: "Fraunces", "Times New Roman", serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Google Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Google Sans", system-ui, -apple-system, sans-serif;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.2667 0.0390 35.36);
   --popover: oklch(1 0 0);
@@ -115,45 +115,46 @@
   --sidebar-ring: oklch(0.6086 0.2307 26.46);
 }
 
+/* Dark is the default theme. */
 .dark {
-  --background: oklch(0.22 0.04 35.36);
-  --foreground: oklch(0.98 0.01 80);
-  --ink: oklch(0.98 0.01 80);
+  --background: oklch(0.2 0.03 35.36);
+  --foreground: oklch(0.96 0.01 80);
+  --ink: oklch(0.96 0.01 80);
   --accent-bold: oklch(0.9012 0.1654 98.09);
-  --accent-soft: oklch(0.3 0.04 35.36);
+  --accent-soft: oklch(0.28 0.035 35.36);
   --accent-lemon: oklch(0.9012 0.1654 98.09);
   --accent-lavender: oklch(0.75 0.15 315.58);
   --accent-aqua: oklch(0.82 0.06 201.56);
-  --rule: oklch(0.98 0.01 80 / 0.15);
-  --card: oklch(0.28 0.04 35.36);
-  --card-foreground: oklch(0.98 0.01 80);
-  --popover: oklch(0.28 0.04 35.36);
-  --popover-foreground: oklch(0.98 0.01 80);
-  --primary: oklch(0.98 0.01 80);
-  --primary-foreground: oklch(0.22 0.04 35.36);
-  --secondary: oklch(0.3 0.04 35.36);
-  --secondary-foreground: oklch(0.98 0.01 80);
-  --muted: oklch(0.3 0.04 35.36);
-  --muted-foreground: oklch(0.75 0.04 80);
-  --accent: oklch(0.3 0.04 35.36);
-  --accent-foreground: oklch(0.98 0.01 80);
+  --rule: oklch(0.96 0.01 80 / 0.15);
+  --card: oklch(0.26 0.035 35.36);
+  --card-foreground: oklch(0.96 0.01 80);
+  --popover: oklch(0.26 0.035 35.36);
+  --popover-foreground: oklch(0.96 0.01 80);
+  --primary: oklch(0.96 0.01 80);
+  --primary-foreground: oklch(0.2 0.03 35.36);
+  --secondary: oklch(0.28 0.035 35.36);
+  --secondary-foreground: oklch(0.96 0.01 80);
+  --muted: oklch(0.28 0.035 35.36);
+  --muted-foreground: oklch(0.8 0.03 80);
+  --accent: oklch(0.28 0.035 35.36);
+  --accent-foreground: oklch(0.96 0.01 80);
   --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.98 0.01 80 / 0.15);
-  --input: oklch(0.98 0.01 80 / 0.15);
+  --border: oklch(0.96 0.01 80 / 0.15);
+  --input: oklch(0.96 0.01 80 / 0.15);
   --ring: oklch(0.9012 0.1654 98.09);
   --chart-1: oklch(0.9012 0.1654 98.09);
   --chart-2: oklch(0.75 0.15 315.58);
   --chart-3: oklch(0.82 0.06 201.56);
-  --chart-4: oklch(0.98 0.01 80);
+  --chart-4: oklch(0.96 0.01 80);
   --chart-5: oklch(0.6787 0.1682 315.58);
-  --sidebar: oklch(0.28 0.04 35.36);
-  --sidebar-foreground: oklch(0.98 0.01 80);
+  --sidebar: oklch(0.26 0.035 35.36);
+  --sidebar-foreground: oklch(0.96 0.01 80);
   --sidebar-primary: oklch(0.9012 0.1654 98.09);
-  --sidebar-primary-foreground: oklch(0.22 0.04 35.36);
-  --sidebar-accent: oklch(0.3 0.04 35.36);
-  --sidebar-accent-foreground: oklch(0.98 0.01 80);
-  --sidebar-border: oklch(0.98 0.01 80 / 0.15);
+  --sidebar-primary-foreground: oklch(0.2 0.03 35.36);
+  --sidebar-accent: oklch(0.28 0.035 35.36);
+  --sidebar-accent-foreground: oklch(0.96 0.01 80);
+  --sidebar-border: oklch(0.96 0.01 80 / 0.15);
   --sidebar-ring: oklch(0.9012 0.1654 98.09);
 }
 
@@ -173,16 +174,22 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Titles and headers: bold Google Sans */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   .font-display {
     font-family: var(--font-display);
+    font-weight: 700;
     font-optical-sizing: auto;
     letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
-
-
   /* Hand-drawn squiggle underline */
   .squiggle {
     text-decoration: underline wavy var(--accent-bold);
@@ -198,7 +205,7 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Accessible whimsical tag backgrounds — all paired with ink text */
+  /* Accessible whimsical tag backgrounds, all paired with ink text */
   .tag-lemon {
     background-color: var(--accent-lemon);
     color: var(--ink);
